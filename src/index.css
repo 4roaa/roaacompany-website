@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-abyss: #092328;
+  --color-brand-pine: #12544F;
+  --color-brand-emerald: #2A835F;
+  --color-brand-ivory: #F7F4ED;
+
+  /* Theme semantic mappings */
+  --color-brand-navy: #092328;
+  --color-brand-purple: #2A835F;
+  --color-brand-purple-dark: #12544F;
+  --color-brand-purple-light: #48a67d;
+  --color-brand-blue: #12544F;
+  --color-brand-green: #2A835F;
+  --color-brand-green-dark: #1e6347;
+  --color-brand-soft: #F7F4ED;
+  --color-brand-gray: #7fa69c;
+  --font-arabic: 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+  --font-latin: 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  background-color: #092328;
+  color: #F7F4ED;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #092328;
+}
+
+body {
+  background-color: #092328;
+  color: #F7F4ED;
+}
+
+/* Language font assignments */
+html[dir="rtl"], body[dir="rtl"] {
+  font-family: 'IBM Plex Sans Arabic', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html[dir="ltr"], body[dir="ltr"] {
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom subtle scrollbar in brand colors */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #092328;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #12544F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2A835F;
+}
+
+
